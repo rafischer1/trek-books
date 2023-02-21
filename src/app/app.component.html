@@ -1,4 +1,7 @@
 <div>
+  <div *ngFor="let b of books$ | async">
+    <div>{{b.title}}</div>
+  </div>
   <router-outlet></router-outlet>
 </div>
 
